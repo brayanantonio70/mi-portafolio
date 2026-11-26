@@ -1,49 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
  <meta charset="UTF-8">
- <meta
-    <title>Brayan Guerra</title>
-    <br
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Portafolio | Brayan Martínez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
+<link rel="stylesheet" href="styles.css">
 <body>
-    <header>
-        <h1>Brayan Guerra</h1> 
-        <nav
+    <header class="header">
+        <h1 style="color: #333;">Brayan Martínez</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="activo">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <main class="contenedor">
+        <section class="tarjeta sobre-mi" id="inicio">
 
-<main>
-<section id="sobre-mi">
-<h2>Sobre mí</h2> 
-    <p>
-    <strong>estudioso</strong>, 
-    <strong>inteligente</strong>, 
-    <strong>amante del deporte</strong> y muy <em>trabajador</em>
-    </p>
-    <br>
+            <div class="avatar">
+                <div class="cabeza"></div>
+                <div class="cuerpo"></div>
+            </div>
 
-    <section id="mis-metas">
-    <h2>Mis Metas</h2> 
-    <h3>ser un gran programador 
-    <h3>tener una gran empresa de desarrollo de software
-    <h3>tener un buen trabajo y salario 
-        <section id="mis-habilidades">
-        <h2>Mis Habilidades</h2>
-        <ul>
-            <li>Programación en Python</li>
-            <li>Desarrollo web con HTML y CSS</li>
-            <li>Base de datos</li>
-        </ul>
+            <div class="contenido">
+                <h2>Sobre mí</h2>
+
+                <p>
+                    Soy estudiante del curso Desarrollo Web Full Stack
+                    Junior de FUSALMO, en Santa Ana. Me apasiona crear
+                    sitios web accesibles para negocios de mi comunidad.
+                </p>
+
+                <div class="botones">
+                    <a href="#proyectos" class="boton">Ver proyectos</a>
+                    <a href="#contacto" class="boton">Contáctame</a>
+                </div>
+            </div>
+
         </section>
+
+        <!-- SECCION MIS METAS -->
+        <section class="tarjeta" id="proyectos">
+
+            <h2>Mis metas</h2>
+
+            <ul class="lista-metas">
+                <li>
+                    Conseguir mi primer empleo como desarrolladora
+                    front-end junior.
+                </li>
+
+                <li>
+                    Crear sitios web para emprendimientos de Santa Ana.
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- SECCION HABILIDADES -->
+        <section class="tarjeta habilidades">
+
+            <h2>Habilidades</h2>
+
+ <ul>
+                <li>HTML semántico</li>
+                <li>CSS</li>
+                <li>Flexbox</li>
+                <li>Git y GitHub</li>
+                <li>Markdown</li>
+                <li>Trabajo en equipo</li>
+                <li>Atención al cliente</li>
+</ul>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; Brayan Guerra, Santa ana, El Salvador</p>
+    <!-- PIE DE PAGINA -->
+    <footer class="footer" id="contacto">
+
+        <p>© 2026 Brayan Martínez    · Santa Ana, El Salvador</p>
+
+        <div class="enlaces">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="mailto:correo@ejemplo.com">Correo</a>
+        </div>
+
     </footer>
+
 </body>
 </html>

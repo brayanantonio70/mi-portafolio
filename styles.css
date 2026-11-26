@@ -1,0 +1,293 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf6ff;
+    color: #333333;
+}
+
+/* ENCABEZADO */
+.header {
+    background-color: #0758b5;
+    color: white;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    transition: color 0.3s;
+}
+
+.header nav a:hover,
+.header nav a.activo {
+    color: #ffcc00;
+}
+
+.header nav a.activo {
+    font-weight: 700;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    width: 92%;
+    max-width: 1400px;
+    margin: 45px auto 38px;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background-color: white;
+    padding: 32px;
+    margin-bottom: 38px;
+    border: 1px solid #c9e0fa;
+    border-radius: 17px;
+    box-shadow: 0 4px 10px rgba(0, 65, 130, 0.08);
+}
+
+.tarjeta h2 {
+    color: #0758b5;
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* SOBRE MI */
+.sobre-mi {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    padding: 42px 11%;
+}
+
+/* AVATAR */
+.avatar {
+    width: 235px;
+    height: 235px;
+    min-width: 235px;
+    background: linear-gradient(135deg, #4169ed, #102f78);
+    border: 7px solid #ffcc00;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cabeza {
+    width: 77px;
+    height: 77px;
+    background-color: #dce6ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cuerpo {
+    width: 135px;
+    height: 110px;
+    background-color: #dce6ff;
+    border-radius: 70px 70px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* TEXTO SOBRE MI */
+.contenido {
+    flex: 1;
+}
+
+.contenido p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #4169ff;
+    color: white;
+    padding: 17px 32px;
+    border-radius: 11px;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #0758b5;
+}
+
+/* METAS */
+.lista-metas {
+    padding-left: 28px;
+    font-size: 22px;
+    line-height: 1.9;
+}
+
+/* HABILIDADES */
+.habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+}
+
+.habilidades li {
+    background-color: #eaf6ff;
+    color: #0060c5;
+    padding: 11px 23px;
+    border-radius: 35px;
+    font-size: 21px;
+}
+
+/* PIE DE PAGINA */
+.footer {
+    background-color: #0758b5;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 30px;
+}
+
+.enlaces a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.enlaces a:hover {
+    color: white;
+}
+
+/* DISEÑO RESPONSIVE PARA CELULARES */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .header nav ul {
+        gap: 20px;
+    }
+
+    .header nav a {
+        font-size: 16px;
+    }
+
+    .contenedor {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    .tarjeta {
+        padding: 24px;
+        margin-bottom: 25px;
+    }
+
+    .sobre-mi {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .avatar {
+        width: 190px;
+        height: 190px;
+        min-width: 190px;
+    }
+
+    .cabeza {
+        width: 65px;
+        height: 65px;
+        top: 38px;
+    }
+
+    .cuerpo {
+        width: 115px;
+        height: 90px;
+    }
+
+    .tarjeta h2 {
+        font-size: 27px;
+    }
+
+    .contenido p {
+        font-size: 17px;
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .boton {
+        font-size: 16px;
+        padding: 13px 20px;
+    }
+
+    .lista-metas {
+        font-size: 17px;
+    }
+
+    .habilidades li {
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        font-size: 15px;
+    }
+
+    .enlaces a {
+        font-size: 17px;
+    }
+}
